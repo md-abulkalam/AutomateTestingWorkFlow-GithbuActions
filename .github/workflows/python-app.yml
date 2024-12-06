@@ -17,11 +17,11 @@ jobs:
       
       # step 1: check out code from repository
       - name: check out code
-        user: actions/checkout@v2
+        uses: actions/checkout@v2
 
       # Step 2: Set up python environment
       - name: Set up Python
-        user: actions/setup-python@v2
+        uses: actions/setup-python@v2
         with:
           python-version: '3.8'
 
@@ -36,4 +36,3 @@ jobs:
         run: pytest
 
 
-   
